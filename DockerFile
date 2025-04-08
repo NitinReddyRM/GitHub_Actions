@@ -8,7 +8,7 @@ WORKDIR /app
 COPY requirement.txt .
 
 # Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirement.txt
 
 COPY . .
 # Make port 5000 available to the world outside this container
